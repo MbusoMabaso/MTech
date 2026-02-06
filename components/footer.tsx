@@ -111,6 +111,18 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             Powered by Innovation
           </p>
+          <div className="right-0 mt-6 flex items-center gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="p-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
+          </div>
         </div>
       </div>
     </footer>
