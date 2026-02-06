@@ -2,34 +2,39 @@ import { ArrowUpRight } from "lucide-react"
 
 const projects = [
   {
-    title: "FinSecure Banking App",
-    category: "Mobile App & Security",
-    description: "A secure mobile banking application kyc financial authentication and end-to-end encryption.",
-    tags: ["React Native", "Security", "FinTech"]
-  },
-    {
-    title: "FirstFix Car Repair App",
-    category: "Mobile App & Automotive ",
-    description: "A secure mobile car repair application with real time updates  end-to-end encryption.",
-    tags: ["React Native", "Security", "FinTech"]
+    title: "OpSec Technologies",
+    category: "Cybersecurity & Infrastructure",
+    description: "Enterprise-grade security portal specializing in decentralized protection, real-time threat monitoring, and encrypted data layers.",
+    tags: ["Security", "Infrastructure", "Enterprise"],
+    href: "https://opsectechnologies.vercel.app"
   },
   {
-    title: "MedPortal Healthcare",
-    category: "Web Development",
-    description: "HIPAA-compliant patient management system with secure data handling and telemedicine integration.",
-    tags: ["Next.js", "Healthcare", "Compliance"]
+    title: "MediBillz",
+    category: "HealthTech SaaS",
+    description: "A comprehensive medical billing ecosystem featuring complex data logic, healthcare revenue cycle management, and secure portal access.",
+    tags: ["Next.js", "SaaS", "Medical"],
+    href: "https://medibillz.vercel.app"
   },
   {
-    title: "RetailMax E-Commerce",
-    category: "Web & Mobile",
-    description: "Full-stack e-commerce platform with real-time inventory, payment processing, and mobile apps.",
-    tags: ["E-Commerce", "API", "Mobile"]
+    title: "Ruimsig Mobile",
+    category: "Mobile App & Automotive",
+    description: "On-demand automotive service platform featuring geolocation, real-time repair tracking, and secure mobile payment processing.",
+    tags: ["React Native", "Logistics", "Mobile"],
+    href: "https://ruimsigmobile.co.za" 
   },
   {
-    title: "CyberShield Assessment",
-    category: "Cybersecurity",
-    description: "Comprehensive security audit and penetration testing for a Fortune 500 company.",
-    tags: ["Pen Testing", "Audit", "Enterprise"]
+    title: "Ruutz",
+    category: "Digital Experience",
+    description: "A high-performance web platform focused on modern architecture, refined UI/UX, and scalable growth tools for digital products.",
+    tags: ["Next.js", "Tailwind", "Product"],
+    href: "https://ruutz.io"
+  },
+  {
+    title: "VisionaryCast",
+    category: "Media & Content",
+    description: "A media-rich content distribution platform for digital broadcasting, featuring high-fidelity audio/video streaming and content tagging.",
+    tags: ["Streaming", "Next.js", "Media"],
+    href: "https://visionarycast.vercel.app"
   }
 ]
 
@@ -49,9 +54,12 @@ export function Projects() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <div 
+            <a 
               key={project.title}
-              className={`group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 ${
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 block ${
                 index === 0 ? "md:col-span-2" : ""
               }`}
             >
@@ -64,13 +72,11 @@ export function Projects() {
                     {project.title}
                   </h3>
                 </div>
-                <button 
-                  type="button"
+                <div 
                   className="p-3 rounded-full bg-secondary text-secondary-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                  aria-label={`View ${project.title} project`}
                 >
                   <ArrowUpRight className="w-5 h-5" />
-                </button>
+                </div>
               </div>
               
               <p className="mt-4 text-muted-foreground leading-relaxed">
@@ -87,7 +93,7 @@ export function Projects() {
                   </span>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
