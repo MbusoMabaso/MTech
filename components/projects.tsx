@@ -35,7 +35,7 @@ const projects = [
     category: "Media & Content",
     description: "A media-rich content distribution platform for digital broadcasting, featuring high-fidelity audio/video streaming and content tagging.",
     tags: ["Streaming", "Next.js", "Media"],
-    href: "https://vcast.vercel.app"
+    href: "https://v-cast.vercel.app"
   }
 ]
 
