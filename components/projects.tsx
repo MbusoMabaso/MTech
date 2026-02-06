@@ -1,13 +1,7 @@
 import { ArrowUpRight } from "lucide-react"
 
 const projects = [
-  {
-    title: "OpSec Technologies",
-    category: "Cybersecurity & Infrastructure",
-    description: "Enterprise-grade security portal specializing in decentralized protection, real-time threat monitoring, and encrypted data layers.",
-    tags: ["Security", "Infrastructure", "Enterprise"],
-    href: "https://opsectechnologies.vercel.app"
-  },
+
   {
     title: "MediBillz",
     category: "HealthTech SaaS",
@@ -28,6 +22,13 @@ const projects = [
     description: "A high-performance web platform focused on modern architecture, refined UI/UX, and scalable growth tools for digital products.",
     tags: ["Next.js", "Tailwind", "Product"],
     href: "https://ruutz.vercel.app"
+  },
+    {
+    title: "OpSec Technologies",
+    category: "Cybersecurity & Infrastructure",
+    description: "Enterprise-grade security portal specializing in decentralized protection, real-time threat monitoring, and encrypted data layers.",
+    tags: ["Security", "Infrastructure", "Enterprise"],
+    href: "https://opsectechnologies.vercel.app"
   },
   {
     title: "VisionaryCast",
