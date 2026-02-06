@@ -20,14 +20,14 @@ const projects = [
     category: "Mobile App & Automotive",
     description: "On-demand automotive service platform featuring geolocation, real-time repair tracking, and secure mobile payment processing.",
     tags: ["React Native", "Logistics", "Mobile"],
-    href: "https://ruimsigmobile.co.za" 
+    href: "https://ruimsigmobile.vercel.app" 
   },
   {
     title: "Ruutz",
     category: "Digital Experience",
     description: "A high-performance web platform focused on modern architecture, refined UI/UX, and scalable growth tools for digital products.",
     tags: ["Next.js", "Tailwind", "Product"],
-    href: "https://ruutz.io"
+    href: "https://ruutz.vercel.app"
   },
   {
     title: "VisionaryCast",
@@ -59,7 +59,7 @@ export function Projects() {
               href={project.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 block ${
+              className={`group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 block no-underline ${
                 index === 0 ? "md:col-span-2" : ""
               }`}
             >
