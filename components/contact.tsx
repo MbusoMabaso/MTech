@@ -10,19 +10,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@mtech.dev",
-    href: "mailto:hello@mtech.dev"
+    value: "mobile.technology@engineer.com",
+    href: "mailto:mobile.technology@engineer.com"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567"
+    value: "+27712784491",
+    href: "tel:+27712784491"
   },
   {
     icon: MapPin,
     label: "Office",
-    value: "123 Tech Street, Silicon Valley, CA",
+    value: "Roodepoort, Gauteng, South Africa",
     href: "#"
   }
 ]

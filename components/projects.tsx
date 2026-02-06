@@ -4,7 +4,13 @@ const projects = [
   {
     title: "FinSecure Banking App",
     category: "Mobile App & Security",
-    description: "A secure mobile banking application with biometric authentication and end-to-end encryption.",
+    description: "A secure mobile banking application kyc financial authentication and end-to-end encryption.",
+    tags: ["React Native", "Security", "FinTech"]
+  },
+    {
+    title: "FirstFix Car Repair App",
+    category: "Mobile App & Automotive ",
+    description: "A secure mobile car repair application with real time updates  end-to-end encryption.",
     tags: ["React Native", "Security", "FinTech"]
   },
   {
